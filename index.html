@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página en Blanco</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #CAE0EE; /* fondo */
+      color: #183543; /* el texxto principal*/
+    }
+
+    /* Encabezado */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #17769B; 
+      color: #fff;
+    }
+
+    .logo-btn {
+      background: #0592C1;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .logo-btn:hover {
+      background: #1B5B76; 
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .menu-btn span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    /* imagenes del inicnio, estas van a ir cambiando cada 2.5s pero pues aun no esta el java */
+    .container-outer {
+      width: 100%;
+      padding: 10px 3px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container-inner {
+      width: 100%;
+      min-height: 200px;
+      border: 2px dashed #81B9D8;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    /* EL CARRUSEL DE OBJETOS, aqui no se si meter la lniea o la hacemos para abajo */
+    .carousel {
+      margin-top: 40px;
+      padding: 20px;
+      background: #A6CCE3; 
+      overflow-x: auto;
+      white-space: nowrap;
+      border-top: 4px solid #56A5CC;
+      border-bottom: 4px solid #56A5CC;
+    }
+
+    .carousel-item {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      margin-right: 15px;
+      background: #56A5CC; 
+      border-radius: 10px;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      color: #183543;
+      cursor: pointer;
+    }
+
+    .carousel-item:hover {
+      background: #0592C1; 
+      color: #fff;
+    }
+
+    /* PAARTE DE ABAJO */
+    .content-section {
+      width: 80%;
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .content-section .image {
+      flex: 1;
+      background: #81B9D8; 
+      height: 200px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 200px;
+      font-weight: bold;
+      color: #183543;
+    }
+
+    .content-section .text {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #A6CCE3; 
+    }
+
+    .content-section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #183543;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="logo-btn">Logo</button>
+    <button class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="container-outer">
+    <div class="container-inner">
+      <!-- DESPUES PONEMOS LAS IMAGENES AQUI -->
+    </div>
+  </div>
+
+  <!-- objetos 3D -->
+  <div class="carousel">
+    <div class="carousel-item">3D.obj</div>
+    <div class="carousel-item">3D.obj</div>
+    <div class="carousel-item">3D.obj</div>
+    <div class="carousel-item">3D.obj</div>
+    <div class="carousel-item">3D.obj</div>
+    <div class="carousel-item">3D.obj</div>
+  </div>
+
+  <!-- PARTE ABAJO OTRA VEZ -->
+  <div class="content-section">
+    <div class="image">IMAGEN</div>
+    <div class="text">
+      <h2>Titulo</h2>
+      <p>texto de cosas relacionadas con la imagen y asi </p>
+    </div>
+  </div>
+
+  <!-- Sección invertida (texto + imagen) -->
+  <div class="content-section reverse">
+    <div class="image">IMAGEN</div>
+    <div class="text">
+      <h2>titulo</h2>
+      <p>texto de cosas relacionadas con la imagen y asi</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; MUSEO VIRTUAL</p>
+  </footer>
+</body>
+</html>
