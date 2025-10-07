@@ -153,7 +153,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8); 
 }
 
-/* SECCIÓN 3: INFERIOR (VISOR 3D) */
+/* visual 3d */
 .section-bottom { 
     width: 100%; 
 }
@@ -173,4 +173,5 @@ body {
     color: #666; 
     font-size: 1.2em; 
 }
+
 /* La llave extra al final del archivo ha sido eliminada */
