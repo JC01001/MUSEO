@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor 3D Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="rectangulo-arriba"></div>
+
+    <main class="container">
+        
+        <section class="section-top">
+            <div class="image-placeholder-vertical">
+                <img src="recursos/imagenes/primeraimagen.jpg" alt="Imagen descriptiva">
+            </div>
+            
+            <div class="text-placeholder">
+                <h1>Fotogrametría</h1>
+                <p>
+                    La fotogrametría es la ciencia de realizar mediciones precisas a partir de fotografías. Su aplicación más común es la creación de modelos 3D detallados de objetos, edificios o terrenos, utilizando múltiples imágenes tomadas desde diferentes ángulos. Esta técnica transforma fotografías 2D en información tridimensional exacta y medible.
+                </p>
+            </div>
+        </section>
+
+        <section class="section-scroll">
+            <button id="scroll-left" class="arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+            <div class="scroll-container" id="scroll-container">
+                <div class="scroll-item" data-model="gato" data-title="imagen1" data-description="texto descriptivo de la imagen 1"><p>imagen1</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen2" data-description="texto descriptivo de la imagen 2"><p>imagen2</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen3" data-description="texto descriptivo de la imagen 3"><p>imagen3</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen4" data-description="texto descriptivo de la imagen 4"><p>imagen4</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen5" data-description="texto descriptivo de la imagen 5"><p>imagen5</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen6" data-description="texto descriptivo de la imagen 6"><p>imagen6</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen7" data-description="texto descriptivo de la imagen 7"><p>imagen7</p></div>
+                <div class="scroll-item" data-model="gato" data-title="imagen8" data-description="texto descriptivo de la imagen 8"><p>imagen8</p></div>
+            </div>
+            <button id="scroll-right" class="arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+        </section>
+
+        <section class="section-bottom">
+            <div id="viewer-container" class="image-placeholder-large">
+                <p class="viewer-placeholder">Haz clic en una imagen del carrusel para cargar el modelo 3D</p>
+            </div>
+        </section>
+        <section class="TextoDebajoDelObj">
+            <div class="TextoObj">
+                <h2> titulo</h2>
+                <p> informacion</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
